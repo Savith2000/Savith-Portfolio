@@ -1,0 +1,19 @@
+#type::after {
+    content: "|";
+    font-weight: 900;
+    color: #008cff;
+    animation: var(--time) blink step-end infinite;
+    position: absolute;
+  }
+  @keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #008cff;
+    }
+  }
+  .hljs {
+    background: #1f2937 !important;
+  }
