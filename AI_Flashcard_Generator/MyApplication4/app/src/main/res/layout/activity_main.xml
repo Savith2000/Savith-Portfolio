@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Flashcard Generator"
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:fontFamily="@font/popbold" />
+
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Create flashcards from your whiteboard images and notes"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/popping_light" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+
+        android:id="@+id/shapeableImageView"
+        android:layout_width="318dp"
+        android:layout_height="324dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/white_board"
+        android:translationY="80dp"
+        andriod:shapeAppearance="@style/RoundedSquare" />
+
+    <Button
+        android:id="@+id/switch_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/shapeableImageView"
+        android:layout_alignEnd="@+id/shapeableImageView"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="16dp"
+        android:text="Generate Flashcards"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:translationY="-20dp" />
+
+
+    <!-- other UI elements -->
+
+</RelativeLayout>
